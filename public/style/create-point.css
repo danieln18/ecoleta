@@ -54,10 +54,20 @@ form fieldset {
 
 form legend {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
 }
 
 form legend h2 {
     font-size: 24px;
+}
+
+form legend span {
+    font-size: 14px;
+    color: var(--title-color);
 }
 
 form .field {
@@ -120,10 +130,6 @@ form button {
     transition: background-color 400ms;
 }
 
-form button:hover {
-    background-color: #2fb86e;
-}
-
 .items-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -169,4 +175,8 @@ form button:hover {
 .items-grid li img,
 .items-grid li span {
     pointer-events: none;
+}
+
+form button:hover {
+    background-color: #2fb86e;
 }
